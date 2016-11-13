@@ -1,6 +1,6 @@
 package commands
 
-import "github.com/leanovate/gopter"
+import "github.com/ijt/gopter"
 
 // SystemUnderTest resembles the system under test, which may be any kind
 // of stateful unit of code

@@ -3,7 +3,7 @@ package gen
 import (
 	"reflect"
 
-	"github.com/leanovate/gopter"
+	"github.com/ijt/gopter"
 )
 
 // OneConstOf generate one of a list of constant values

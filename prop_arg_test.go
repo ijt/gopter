@@ -3,7 +3,7 @@ package gopter_test
 import (
 	"testing"
 
-	"github.com/leanovate/gopter"
+	"github.com/ijt/gopter"
 )
 
 func TestPropArg(t *testing.T) {

@@ -3,7 +3,7 @@ package gen
 import (
 	"time"
 
-	"github.com/leanovate/gopter"
+	"github.com/ijt/gopter"
 )
 
 // Time generates an arbitrary time.Time

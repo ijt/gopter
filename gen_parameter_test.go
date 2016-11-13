@@ -4,7 +4,7 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/leanovate/gopter"
+	"github.com/ijt/gopter"
 )
 
 type fixedSeed struct {

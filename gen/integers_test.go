@@ -4,8 +4,8 @@ import (
 	"math"
 	"testing"
 
-	"github.com/leanovate/gopter"
-	"github.com/leanovate/gopter/gen"
+	"github.com/ijt/gopter"
+	"github.com/ijt/gopter/gen"
 )
 
 func TestInt64Range(t *testing.T) {

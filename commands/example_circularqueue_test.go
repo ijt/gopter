@@ -3,9 +3,9 @@ package commands_test
 import (
 	"fmt"
 
-	"github.com/leanovate/gopter"
-	"github.com/leanovate/gopter/commands"
-	"github.com/leanovate/gopter/gen"
+	"github.com/ijt/gopter"
+	"github.com/ijt/gopter/commands"
+	"github.com/ijt/gopter/gen"
 )
 
 // *****************************************

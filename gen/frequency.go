@@ -3,7 +3,7 @@ package gen
 import (
 	"sort"
 
-	"github.com/leanovate/gopter"
+	"github.com/ijt/gopter"
 )
 
 // Frequency combines multiple weighted generators of the the same result type

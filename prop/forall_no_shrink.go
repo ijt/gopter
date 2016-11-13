@@ -3,7 +3,7 @@ package prop
 import (
 	"reflect"
 
-	"github.com/leanovate/gopter"
+	"github.com/ijt/gopter"
 )
 
 /*

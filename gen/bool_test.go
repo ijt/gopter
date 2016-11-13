@@ -3,7 +3,7 @@ package gen_test
 import (
 	"testing"
 
-	"github.com/leanovate/gopter/gen"
+	"github.com/ijt/gopter/gen"
 )
 
 func TestBool(t *testing.T) {

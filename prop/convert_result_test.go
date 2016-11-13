@@ -5,7 +5,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/leanovate/gopter"
+	"github.com/ijt/gopter"
 )
 
 func TestConvertResult(t *testing.T) {

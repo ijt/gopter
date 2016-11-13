@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/leanovate/gopter/arbitrary"
+	"github.com/ijt/gopter/arbitrary"
 )
 
 func TestArbitrariesSimple(t *testing.T) {

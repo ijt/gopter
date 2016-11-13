@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/leanovate/gopter"
-	"github.com/leanovate/gopter/prop"
+	"github.com/ijt/gopter"
+	"github.com/ijt/gopter/prop"
 )
 
 /*

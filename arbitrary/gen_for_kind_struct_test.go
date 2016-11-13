@@ -5,8 +5,8 @@ import (
 	"testing"
 	"unicode"
 
-	"github.com/leanovate/gopter/arbitrary"
-	"github.com/leanovate/gopter/gen"
+	"github.com/ijt/gopter/arbitrary"
+	"github.com/ijt/gopter/gen"
 )
 
 type DemoStruct struct {

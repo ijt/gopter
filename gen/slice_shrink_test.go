@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/leanovate/gopter/gen"
+	"github.com/ijt/gopter/gen"
 )
 
 func TestSliceShrink(t *testing.T) {

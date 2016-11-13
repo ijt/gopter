@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/leanovate/gopter/gen"
+	"github.com/ijt/gopter/gen"
 )
 
 func TestTimeShrink(t *testing.T) {

@@ -4,8 +4,8 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/leanovate/gopter"
-	"github.com/leanovate/gopter/gen"
+	"github.com/ijt/gopter"
+	"github.com/ijt/gopter/gen"
 )
 
 // Arbitraries defines a context to generate arbitrary values of any kind.

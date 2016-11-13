@@ -4,7 +4,7 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"github.com/leanovate/gopter"
+	"github.com/ijt/gopter"
 )
 
 // RuneRange generates runes within a given range

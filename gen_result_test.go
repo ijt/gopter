@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/leanovate/gopter"
+	"github.com/ijt/gopter"
 )
 
 func TestNewGenResult(t *testing.T) {

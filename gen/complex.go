@@ -1,6 +1,6 @@
 package gen
 
-import "github.com/leanovate/gopter"
+import "github.com/ijt/gopter"
 
 // Complex128Box generate complex128 numbers within a rectangle/box in the complex plane
 func Complex128Box(min, max complex128) gopter.Gen {

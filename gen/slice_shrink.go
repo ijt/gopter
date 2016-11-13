@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/leanovate/gopter"
+	"github.com/ijt/gopter"
 )
 
 type sliceShrinkOne struct {

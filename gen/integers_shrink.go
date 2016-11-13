@@ -1,7 +1,7 @@
 package gen
 
 import (
-	"github.com/leanovate/gopter"
+	"github.com/ijt/gopter"
 )
 
 type int64Shrink struct {

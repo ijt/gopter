@@ -1,6 +1,6 @@
 package gen
 
-import "github.com/leanovate/gopter"
+import "github.com/ijt/gopter"
 
 // Complex128Shrinker is a shrinker for complex128 numbers
 func Complex128Shrinker(v interface{}) gopter.Shrink {

@@ -3,7 +3,7 @@ package gen_test
 import (
 	"testing"
 
-	"github.com/leanovate/gopter"
+	"github.com/ijt/gopter"
 )
 
 func commonGeneratorTest(t *testing.T, name string, gen gopter.Gen, valueCheck func(interface{}) bool) {

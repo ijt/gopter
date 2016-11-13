@@ -4,7 +4,7 @@ import (
 	"math"
 	"testing"
 
-	"github.com/leanovate/gopter/gen"
+	"github.com/ijt/gopter/gen"
 )
 
 func TestFloat64(t *testing.T) {

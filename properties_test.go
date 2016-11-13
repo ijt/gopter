@@ -3,9 +3,9 @@ package gopter_test
 import (
 	"testing"
 
-	"github.com/leanovate/gopter"
-	"github.com/leanovate/gopter/gen"
-	"github.com/leanovate/gopter/prop"
+	"github.com/ijt/gopter"
+	"github.com/ijt/gopter/gen"
+	"github.com/ijt/gopter/prop"
 )
 
 func TestProperties(t *testing.T) {
