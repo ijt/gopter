@@ -27,7 +27,12 @@ func spookyCalculation(a, b int) int {
 //  a_ORIGINAL (44 shrinks): 861384713
 //  b: 0
 //  b_ORIGINAL (1 shrinks): -642623569
-func TestLabels(t *testing.T) {
+
+// To run this test, change its name to TestLabels and then run
+//
+//   go test example_labels_test.go
+//
+func testLabels(t *testing.T) {
 	parameters := gopter.DefaultTestParameters()
 	parameters.Rng.Seed(1234) // Just for this example to generate reproducable results
 	parameters.MinSuccessfulTests = 10000
