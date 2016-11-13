@@ -5,6 +5,7 @@ import (
 	"math"
 	"strconv"
 	"strings"
+	"testing"
 
 	"github.com/ijt/gopter"
 	"github.com/ijt/gopter/gen"
@@ -27,7 +28,7 @@ func fizzbuzz(number int) (string, error) {
 	return strconv.Itoa(number), nil
 }
 
-func Example_fizzbuzz() {
+func TestFizzbuzz(t *testing.T) {
 	properties := gopter.NewProperties(nil)
 
 	properties.Property("Undefined for all <= 0", prop.ForAll(
@@ -68,11 +69,5 @@ func Example_fizzbuzz() {
 		}),
 	))
 
-	// When using testing.T you might just use: properties.TestingRun(t)
-	properties.Run(gopter.ConsoleReporter(false))
-	// Output:
-	// + Undefined for all <= 0: OK, passed 100 tests.
-	// + Start with Fizz for all multiples of 3: OK, passed 100 tests.
-	// + End with Buzz for all multiples of 5: OK, passed 100 tests.
-	// + Int as string for all non-divisible by 3 or 5: OK, passed 100 tests.
+	properties.TestingRun(t)
 }

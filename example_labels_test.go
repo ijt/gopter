@@ -1,6 +1,8 @@
 package gopter_test
 
 import (
+	"testing"
+
 	"github.com/ijt/gopter"
 	"github.com/ijt/gopter/gen"
 	"github.com/ijt/gopter/prop"
@@ -16,7 +18,7 @@ func spookyCalculation(a, b int) int {
 	return 2*b + 3*(2+(a+1)+b*(b+1))
 }
 
-// Example_labels demonstrates how labels may help, in case of more complex
+// TestLabels demonstrates how labels may help, in case of more complex
 // conditions.
 // The output will be:
 //  ! Check spooky: Falsified after 0 passed tests.
@@ -25,7 +27,7 @@ func spookyCalculation(a, b int) int {
 //  a_ORIGINAL (44 shrinks): 861384713
 //  b: 0
 //  b_ORIGINAL (1 shrinks): -642623569
-func Example_labels() {
+func TestLabels(t *testing.T) {
 	parameters := gopter.DefaultTestParameters()
 	parameters.Rng.Seed(1234) // Just for this example to generate reproducable results
 	parameters.MinSuccessfulTests = 10000
@@ -47,13 +49,5 @@ func Example_labels() {
 		gen.Int().WithLabel("b"),
 	))
 
-	// When using testing.T you might just use: properties.TestingRun(t)
-	properties.Run(gopter.ConsoleReporter(false))
-	// Output:
-	// ! Check spooky: Falsified after 0 passed tests.
-	// > Labels of failing property: even result
-	// a: 3
-	// a_ORIGINAL (44 shrinks): 861384713
-	// b: 0
-	// b_ORIGINAL (1 shrinks): -642623569
+	properties.TestingRun(t)
 }
