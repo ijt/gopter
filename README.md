@@ -1,9 +1,7 @@
 # GOPTER
 
 ... the GOlang Property TestER
-[![Build Status](https://travis-ci.org/leanovate/gopter.svg?branch=master)](https://travis-ci.org/leanovate/gopter)
-[![codecov](https://codecov.io/gh/leanovate/gopter/branch/master/graph/badge.svg)](https://codecov.io/gh/leanovate/gopter)
-[![GoDoc](https://godoc.org/github.com/leanovate/gopter?status.png)](https://godoc.org/github.com/leanovate/gopter)
+[![GoDoc](https://godoc.org/github.com/ijt/gopter?status.png)](https://godoc.org/github.com/ijt/gopter)
 
 [Change Log](CHANGELOG.md)
 
@@ -31,11 +29,11 @@ Main differences to the testing/quick package:
 
 Current godocs:
 
-* [gopter](https://godoc.org/github.com/leanovate/gopter):  Main interfaces
-* [gopter/gen](https://godoc.org/github.com/leanovate/gopter/gen): All commonly used generators
-* [gopter/prop](https://godoc.org/github.com/leanovate/gopter/prop): Common helpers to create properties from a condition function and an specific generators
-* [gopter/arbitrary](https://godoc.org/github.com/leanovate/gopter/arbitrary): Helpers automatically combine generators for arbitrary types
-* [gopter/commands](https://godoc.org/github.com/leanovate/gopter/commands): Helpers to create stateful tests based on arbirtrary commands
+* [gopter](https://godoc.org/github.com/ijt/gopter):  Main interfaces
+* [gopter/gen](https://godoc.org/github.com/ijt/gopter/gen): All commonly used generators
+* [gopter/prop](https://godoc.org/github.com/ijt/gopter/prop): Common helpers to create properties from a condition function and an specific generators
+* [gopter/arbitrary](https://godoc.org/github.com/ijt/gopter/arbitrary): Helpers automatically combine generators for arbitrary types
+* [gopter/commands](https://godoc.org/github.com/ijt/gopter/commands): Helpers to create stateful tests based on arbirtrary commands
 
 ## License
 
