@@ -1,7 +1,6 @@
 PACKAGES=$(shell go list ./...)
 
 all: format
-	@go get github.com/smartystreets/goconvey
 	@go build -v ./...
 
 format:
