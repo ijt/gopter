@@ -2,13 +2,14 @@ package gopter_test
 
 import (
 	"math"
+	"testing"
 
 	"github.com/ijt/gopter"
 	"github.com/ijt/gopter/gen"
 	"github.com/ijt/gopter/prop"
 )
 
-func Example_sqrt() {
+func TestSqrt(t *testing.T) {
 	parameters := gopter.DefaultTestParameters()
 	parameters.Rng.Seed(1234) // Just for this example to generate reproducable results
 
@@ -29,9 +30,5 @@ func Example_sqrt() {
 		gen.Float64Range(0, math.MaxFloat64),
 	))
 
-	// When using testing.T you might just use: properties.TestingRun(t)
-	properties.Run(gopter.ConsoleReporter(false))
-	// Output:
-	// + greater one of all greater one: OK, passed 100 tests.
-	// + squared is equal to value: OK, passed 100 tests.
+	properties.TestingRun(t)
 }
