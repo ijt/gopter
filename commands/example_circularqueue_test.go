@@ -185,7 +185,7 @@ var cbCommands = &commands.ProtoCommands{
 	}),
 	InitialPreConditionFunc: func(state commands.State) bool {
 		s := state.(*cbState)
-		return len(s.elements) >= 0 && len(s.elements) <= s.size
+		return len(s.elements) <= s.size
 	},
 	GenCommandFunc: func(state commands.State) gopter.Gen {
 		return gen.OneGenOf(genGetCommand, genPutCommand, genSizeCommand)
